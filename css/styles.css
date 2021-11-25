@@ -591,6 +591,9 @@ li {
 .footer-contacts:not(:last-child) {
   margin-bottom: 9px;
 }
+
+/* --------------CONNECT--------------  */
+
 .connect {
   margin-left: 70px;
 }
@@ -624,7 +627,7 @@ li {
 .connect-icon:focus {
   background-color: var(--theme-color);
 }
-
+/* --------------BACKDROP--------------  */
 .backdrop {
   position: fixed;
   top: 0;
@@ -644,6 +647,9 @@ li {
 .backdrop.is-hidden .modal{
   transform: translate(-50%, -50%) scale(0.9);
 }
+
+/* --------------MODAL--------------  */
+
 .modal {
   position: absolute;
   top: 50%;
@@ -657,8 +663,7 @@ li {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-
-  
+ 
 }
 
 .btn-close {
@@ -679,6 +684,7 @@ li {
   border-radius: 50%;
   fill: #000000;
   transition: fill var(--ttime) var(--cubic);
+  cursor: pointer;
 }
 
 .btn-close:hover, .btn-close:focus{

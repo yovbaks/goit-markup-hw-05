@@ -155,7 +155,7 @@ li {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  transition: color var(--ttime) var(--cubic);
+  transition: color var(--ttime) var(--cubic), fill var(--ttime) var(--cubic);
 }
 .contacts-top .link:hover,
 .contacts-top .link:focus {
@@ -166,7 +166,7 @@ li {
   justify-content: center;
   align-items: center;
   fill: var(--clients-color);
-  transition: fill var(--ttime) var(--cubic);
+ 
 }
 .contacts-top a:hover,
 .contacts-top a:focus {
@@ -232,8 +232,7 @@ li {
   border-style: none;
 
   transition: background-color var(--ttime) var(--cubic),
-    color var(--ttime) var(--cubic), box-shadow var(--ttime) var(--cubic),
-    border-color var(--ttime) var(--cubic);
+    color var(--ttime) var(--cubic), box-shadow var(--ttime) var(--cubic);
 }
 
 .button.active:hover,
@@ -393,10 +392,10 @@ li {
   box-shadow: var(--box-shadows);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
-  margin-left: 30px;
+  
 }
-.comanda-item:first-child {
-  margin-left: 0;
+.comanda-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .comanda-thumb {
@@ -643,11 +642,12 @@ li {
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  transition: opacity var(--ttime) var(--cubic);
+  transition: opacity var(--ttime) var(--cubic), visibility var(--ttime) var(--cubic) ;
 }
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
